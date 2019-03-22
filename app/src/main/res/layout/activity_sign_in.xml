@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.emptytrip.hr.emptytrip.SignInActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/img_back"
+                    android:scaleType="centerInside"
+                    />
+                <Button
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:id="@+id/btn_back"
+                    android:background="@android:color/transparent"
+                    />
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_marginTop="60dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:src="@drawable/img_logogreen"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/tv_logo1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Empty"
+                        android:textColor="#4add5d"
+                        android:textSize="45dp"
+                        />
+                    <TextView
+                        android:id="@+id/tv_logo2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Trip"
+                        android:textSize="45dp"
+                        android:textColor="@color/title_Color"
+                        />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_main"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/title_Color"
+                    android:text="Sign In"
+                    android:textSize="28dp"
+                    android:gravity="center"
+                    android:layout_marginTop="40dp"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_mobile"
+                    android:layout_marginTop="35dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mobile Number"
+                    android:textSize="15dp"
+                    android:textColor="@color/grey_Color"
+                    />
+                <LinearLayout
+                    android:background="@drawable/gery_button_border"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp">
+                    <com.hbb20.CountryCodePicker
+                        android:id="@+id/ccp_phoneCode"
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        app:ccp_showNameCode="false"
+                        app:ccp_textSize="15dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        />
+                    <EditText
+                        android:id="@+id/et_mobilenumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="Enter Mobile Number"
+                        android:textSize="15dp"
+                        android:text="9638360894"
+                        android:background="@android:color/transparent"
+                        android:inputType="phone"
+                        android:singleLine="true"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"/>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_password"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Password"
+                    android:textSize="15dp"
+                    android:textColor="@color/grey_Color"
+                    />
+                <EditText
+                    android:id="@+id/et_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/gery_button_border"
+                    android:hint="Enter Password"
+                    android:textAllCaps="false"
+                    android:textSize="15dp"
+                    android:singleLine="true"
+                    android:paddingLeft="5dp"
+                    android:text="123456789"
+                    android:paddingRight="5dp"
+                    android:inputType="textPassword"
+                    android:textColor="@color/grey_Color"
+                    android:layout_marginTop="20dp"
+                    />
+
+                <Button
+                    android:id="@+id/btn_submit"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/green_background_button"
+                    android:textColor="#FFFFFF"
+                    android:text="Submit"
+                    android:textAllCaps="false"
+                    android:textSize="15dp"
+                    android:layout_marginTop="40dp"
+                    />
+                <Button
+                    android:id="@+id/btn_forgotpassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@android:color/transparent"
+                    android:text="Forgot your password?"
+                    android:textColor="@color/grey_Color"
+                    android:textAllCaps="false"
+                    android:layout_marginTop="10dp"
+                    />
+                <TextView
+                    android:id="@+id/tv_textView"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@android:color/transparent"
+                    android:text="New to Empty Trip? Not for long…."
+                    android:textColor="@color/black_Color"
+                    android:textAllCaps="false"
+                    android:textSize="15dp"
+                    android:layout_marginTop="30dp"
+                    />
+                <Button
+                    android:id="@+id/btn_signUp"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@android:color/transparent"
+                    android:text="Sign up here"
+                    android:textColor="@color/black_Color"
+                    android:textAllCaps="false"
+                    android:textSize="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="30dp"
+                    />
+            </LinearLayout>
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

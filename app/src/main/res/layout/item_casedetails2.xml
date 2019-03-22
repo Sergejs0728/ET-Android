@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_margin="20dp"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/tv_note"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Please share details of your issue here
+and we’ll investigate the matter immediately."
+            android:gravity="center"
+            android:textSize="17dp"
+            android:textColor="@color/grey_Color"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            />
+
+        <EditText
+            android:id="@+id/et_details"
+            android:layout_width="match_parent"
+            android:layout_height="187dp"
+            android:hint="Enter details here"
+            android:gravity="top"
+            android:background="@drawable/gery_button_border"
+            android:padding="10dp"
+            android:layout_marginTop="15dp"
+            />
+
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:gravity="right"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageButton
+                android:id="@+id/btn_attachment"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/img_attachment"
+                android:background="@android:color/transparent"
+                android:scaleType="centerInside"
+                />
+
+            <ImageButton
+                android:id="@+id/btn_sendbutton"
+                android:layout_marginLeft="20dp"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/img_send"
+                android:background="@android:color/transparent"
+                android:scaleType="centerInside"
+                android:layout_marginBottom="30dp"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

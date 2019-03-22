@@ -1,0 +1,239 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.emptytrip.hr.emptytrip.MyProfileFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.loopeer.shadow.ShadowView
+            android:id="@+id/shadow_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="10dp"
+            android:paddingBottom="10dp"
+            app:cornerRadius="4dp"
+            app:shadowMarginBottom="10dp"
+            app:shadowRadius="14dp">
+            <LinearLayout
+                android:id="@+id/linear"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:src="@drawable/img_back"
+                        android:scaleType="centerInside"
+                        />
+                    <Button
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:id="@+id/btn_back"
+                        android:background="@android:color/transparent"
+                        />
+                </RelativeLayout>
+                <TextView
+                    android:id="@+id/tv_profile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="My Profile"
+                    android:textSize="28dp"
+                    android:gravity="center"
+                    android:textColor="@color/title_Color"
+                    android:layout_marginBottom="20dp"
+                    />
+
+            </LinearLayout>
+        </com.loopeer.shadow.ShadowView>
+        <com.loopeer.shadow.ShadowView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:elevation="10dp"
+            app:cornerRadius="4dp"
+            app:shadowMarginBottom="10dp"
+            app:shadowMarginLeft="10dp"
+            app:shadowMarginRight="10dp"
+            app:shadowRadius="14dp">
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+
+                    android:paddingRight="30dp"
+                    android:paddingLeft="30dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_gravity="center_horizontal"
+                        android:layout_width="71dp"
+                        android:layout_height="71dp"
+                        android:src="@drawable/img_photo"
+                        android:layout_marginTop="35dp"
+                        />
+                    <TextView
+                        android:id="@+id/tv_main"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Please complete all fields"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="25dp"
+                        android:textSize="15dp"
+                        android:textColor="@color/grey_Color"
+                        />
+                    <TextView
+                        android:id="@+id/tv_firstname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="First Name"
+                        android:layout_marginTop="20dp"
+                        android:textSize="15dp"
+                        android:textColor="@color/grey_Color"
+                        />
+                    <EditText
+                        android:id="@+id/et_firstname"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:hint="John"
+                        android:textSize="15dp"
+                        android:paddingLeft="10dp"
+                        android:background="@drawable/gery_button_border"/>
+
+                    <TextView
+                        android:id="@+id/tv_surname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Surname"
+                        android:layout_marginTop="20dp"
+                        android:textSize="15dp"
+                        android:textColor="@color/grey_Color"
+                        />
+                    <EditText
+                        android:id="@+id/et_surname"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:hint="Doe"
+                        android:textSize="15dp"
+                        android:paddingLeft="10dp"
+                        android:background="@drawable/gery_button_border"/>
+
+                    <TextView
+                        android:id="@+id/tv_mobile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mobile Number"
+                        android:layout_marginTop="20dp"
+                        android:textSize="15dp"
+                        android:textColor="@color/grey_Color"
+                        />
+                    <LinearLayout
+                        android:background="@drawable/gery_button_border"
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp">
+                        <com.hbb20.CountryCodePicker
+                            android:id="@+id/ccp_phoneCode"
+                            android:gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            app:ccp_showNameCode="false"
+                            app:ccp_textSize="15dp"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            />
+                        <EditText
+                            android:id="@+id/et_mobilenumber"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:hint="Enter Mobile Number"
+                            android:textSize="15dp"
+                            android:background="@android:color/transparent"
+                            android:inputType="phone"
+                            android:singleLine="true"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"/>
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tv_email"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Email"
+                        android:layout_marginTop="20dp"
+                        android:textSize="15dp"
+                        android:textColor="@color/grey_Color"
+                        />
+                    <EditText
+                        android:id="@+id/et_email"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:hint="John@gmail.com"
+                        android:paddingLeft="10dp"
+                        android:textSize="15dp"
+                        android:background="@drawable/gery_button_border"/>
+
+                    <TextView
+                        android:id="@+id/tv_password"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Password"
+                        android:layout_marginTop="20dp"
+                        android:textSize="15dp"
+                        android:textColor="@color/grey_Color"
+                        />
+                    <EditText
+                        android:id="@+id/et_password"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:hint="Password"
+                        android:textSize="15dp"
+                        android:inputType="textPassword"
+                        android:paddingLeft="10dp"
+                        android:background="@drawable/gery_button_border"/>
+
+                    <Button
+                        android:id="@+id/btn_deactivate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Deactivate your account"
+                        android:textColor="@color/black_Color"
+                        android:textSize="15dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="50dp"
+                        android:textAllCaps="false"
+                        android:background="@android:color/transparent"
+                        android:layout_gravity="center_horizontal"
+                        />
+                </LinearLayout>
+
+            </ScrollView>
+        </com.loopeer.shadow.ShadowView>
+
+
+    </LinearLayout>
+
+
+
+
+</FrameLayout>

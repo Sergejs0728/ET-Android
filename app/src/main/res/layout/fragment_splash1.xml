@@ -1,0 +1,86 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#47dc52"
+    tools:context="com.emptytrip.hr.emptytrip.Splash1Fragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/img_logo"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/tv_logo1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Empty"
+                android:textColor="#FFFFFF"
+                android:textSize="45dp"
+                />
+            <TextView
+                android:id="@+id/tv_logo2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Trip"
+                android:textSize="45dp"
+                android:textColor="@color/white_Color"
+                />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_marginTop="73dp"
+            android:layout_gravity="center"
+            android:layout_width="87dp"
+            android:layout_height="87dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/img_splash1"
+            android:background="@android:color/transparent"
+            />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="SAVE MONEY"
+            android:textSize="28dp"
+            android:gravity="center"
+            android:layout_marginTop="46dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="Get discounted taxi rides to your destination by filling an empty seat!"
+            android:textSize="17dp"
+            android:gravity="center"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="46dp"
+            />
+    </LinearLayout>
+
+</FrameLayout>

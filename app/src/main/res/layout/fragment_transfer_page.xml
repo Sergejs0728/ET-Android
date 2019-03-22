@@ -1,0 +1,98 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/layout_Color"
+    tools:context="com.emptytrip.hr.emptytrip.TransferPageFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <com.loopeer.shadow.ShadowView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="10dp"
+        app:cornerRadius="4dp"
+        app:shadowMargin="10dp"
+        app:shadowRadius="14dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="1">
+                <RelativeLayout
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:src="@drawable/img_back"
+                        android:scaleType="centerInside"
+                        />
+                    <Button
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:id="@+id/btn_back"
+                        android:background="@android:color/transparent"
+                        />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="50dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/tv_main"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Add a new contact"
+                        android:textColor="@color/title_Color"
+                        android:textSize="28dp" />
+
+                    <EditText
+                        android:id="@+id/et_mobile"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="60dp"
+                        android:background="@drawable/gery_button_border"
+                        android:hint="Enter their mobile number"
+                        android:padding="5dp"
+                        android:textSize="15dp" />
+                </LinearLayout>
+
+                <Button
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:id="@+id/btn_next"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:text="Confirm"
+                    android:textColor="@color/white_Color"
+                    android:background="@drawable/green_background_button"
+                    android:layout_marginBottom="20dp"
+                    android:textAllCaps="false"
+                    />
+            </LinearLayout>
+
+        </RelativeLayout>
+    </com.loopeer.shadow.ShadowView>
+
+
+
+
+</FrameLayout>

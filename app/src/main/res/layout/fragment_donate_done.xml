@@ -1,0 +1,78 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/layout_Color"
+    tools:context="com.emptytrip.hr.emptytrip.DonateDoneFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <com.loopeer.shadow.ShadowView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="10dp"
+        app:cornerRadius="4dp"
+        app:shadowMargin="10dp"
+        app:shadowRadius="14dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_gravity="center_horizontal"
+                android:layout_above="@id/tv_main"
+                android:layout_width="82dp"
+                android:layout_height="82dp"
+                android:src="@drawable/img_success"
+                />
+
+            <TextView
+                android:layout_above="@id/tv_note"
+                android:id="@+id/tv_main"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Thank you!
+Your donation has
+been sent."
+                android:textSize="29dp"
+                android:gravity="center_horizontal"
+                android:textColor="@color/title_Color"
+                android:layout_marginTop="30dp"
+                />
+            <TextView
+                android:layout_above="@id/btn_ok"
+                android:id="@+id/tv_note"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/grey_Color"
+                android:text="At Empty Trip you’re more than a customer, you’re our friends, our family - heck you’re even our cheerleaders! So we want only the best for you, and appreciate any feedback to improve our service."
+                android:gravity="center"
+                android:textSize="17dp"
+                android:layout_marginTop="30dp"
+                />
+
+            <Button
+                android:id="@+id/btn_ok"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:text="OK"
+                android:textColor="@color/white_Color"
+                android:background="@drawable/green_background_button"
+                android:layout_marginTop="30dp"
+                android:textSize="15dp"
+                android:layout_marginBottom="20dp"
+                />
+
+        </LinearLayout>
+
+    </com.loopeer.shadow.ShadowView>
+
+
+
+
+</FrameLayout>

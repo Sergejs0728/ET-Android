@@ -1,0 +1,114 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.emptytrip.hr.emptytrip.EarningTotalPageFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    
+    <LinearLayout
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="50dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        
+        <LinearLayout
+            android:weightSum="3"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageButton
+                android:id="@+id/btn_donate"
+                android:layout_weight="1"
+                android:layout_width="60dp"
+                android:layout_height="90dp"
+                android:src="@drawable/img_donate"
+                android:scaleType="centerInside"
+                android:background="@android:color/transparent"
+                />
+            <ImageButton
+                android:id="@+id/btn_withdraw"
+                android:layout_weight="1"
+                android:layout_width="60dp"
+                android:layout_height="90dp"
+                android:src="@drawable/img_withdraw"
+                android:scaleType="centerInside"
+                android:background="@android:color/transparent"
+                />
+            <ImageButton
+                android:id="@+id/btn_transfer"
+                android:layout_weight="1"
+                android:layout_width="60dp"
+                android:layout_height="90dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/img_transfer"
+                android:background="@android:color/transparent"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="50dp"
+            android:weightSum="3"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:id="@+id/btn_contacts"
+                    android:layout_width="79dp"
+                    android:layout_height="84dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/img_contact"
+                    android:background="@android:color/transparent"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:id="@+id/btn_affiliate"
+                    android:layout_weight="1"
+                    android:layout_width="75dp"
+                    android:layout_height="103dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/img_affiliate"
+                    android:background="@android:color/transparent"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:id="@+id/btn_protected"
+                    android:layout_weight="1"
+                    android:layout_width="93dp"
+                    android:layout_height="107dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/img_protected"
+                    android:background="@android:color/transparent"
+                    />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,172 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.emptytrip.hr.emptytrip.MyTripsDoneFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <com.loopeer.shadow.ShadowView
+        android:id="@+id/shadow_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="10dp"
+        android:layout_gravity="center"
+        android:paddingBottom="10dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="30dp"
+        app:cornerRadius="4dp"
+        app:shadowMargin="10dp"
+        app:shadowRadius="14dp">
+
+        <RelativeLayout
+            android:padding="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:layout_above="@+id/linear_bottom"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+                    android:src="@drawable/img_success"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_main"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Your Empty Trip Has Been Changed!"
+                    android:textSize="25dp"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/title_Color"
+                    android:layout_marginTop="35dp"
+                    android:layout_marginBottom="20dp"
+                    />
+                <TextView
+                    android:id="@+id/tv_note"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/grey_Color"
+                    android:text="All the drivers who have applied to your booking have been notified."
+                    android:gravity="center"
+                    android:textSize="17dp"
+                    android:layout_marginBottom="30dp"
+                    />
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/linear_bottom"
+                android:layout_alignParentBottom="true"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/btn_ok"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:text="OK"
+                    android:textColor="@color/white_Color"
+                    android:background="@drawable/green_background_button"
+                    />
+                <RelativeLayout
+                    android:layout_marginTop="30dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_mylocation"
+                        android:layout_width="wrap_content"
+
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:gravity="left"
+                        android:text="My Location"
+                        android:textColor="@color/grey_Color"
+                        android:textSize="15dp" />
+                    <LinearLayout
+                        android:layout_alignParentRight="true"
+                        android:id="@+id/linear"
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:gravity="right"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_marginRight="5dp"
+                            android:layout_width="21dp"
+                            android:layout_height="21dp"
+                            android:src="@drawable/img_geopin"/>
+
+                        <TextView
+                            android:id="@+id/tv_destination"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Destination"
+                            android:textSize="15dp"
+                            android:gravity="center"
+                            android:textColor="@color/grey_Color"
+                            />
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/relative"
+                        android:layout_toEndOf="@+id/tv_mylocation"
+                        android:layout_toStartOf="@id/linear"
+                        android:layout_toLeftOf="@id/linear"
+                        android:layout_toRightOf="@+id/tv_mylocation"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <View
+                            android:id="@+id/view"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/grey_Color"
+                            android:layout_below="@id/tv_distance"
+
+                            />
+
+                        <TextView
+                            android:id="@+id/tv_distance"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="25 KM"
+                            android:layout_centerHorizontal="true"
+                            android:textSize="15dp"
+                            />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/tv_departure"
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@+id/relative"
+                        android:gravity="center"
+                        android:textSize="15dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="DEPARTURE: 3rd July 2018 12:30 am"
+                        />
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </com.loopeer.shadow.ShadowView>
+
+
+</FrameLayout>

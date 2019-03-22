@@ -1,0 +1,120 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.emptytrip.hr.emptytrip.SearchTimeConfirmFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.loopeer.shadow.ShadowView
+            android:id="@+id/shadow_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="10dp"
+            android:paddingBottom="10dp"
+            app:cornerRadius="4dp"
+            app:shadowMarginBottom="10dp"
+            app:shadowRadius="14dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:src="@drawable/img_back"
+                        android:scaleType="centerInside"
+                        />
+                    <Button
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:id="@+id/btn_back"
+                        android:background="@android:color/transparent"
+                        />
+                </RelativeLayout>
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Preferred collection time?"
+                    android:textSize="28dp"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/title_Color"
+                    />
+
+            </LinearLayout>
+
+        </com.loopeer.shadow.ShadowView>
+
+        <com.loopeer.shadow.ShadowView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:elevation="10dp"
+            app:cornerRadius="4dp"
+            app:shadowMarginBottom="10dp"
+            app:shadowMarginLeft="10dp"
+            app:shadowMarginRight="10dp"
+            app:shadowRadius="14dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <LinearLayout
+                    android:weightSum="1"
+                    android:gravity="center"
+                    android:layout_marginBottom="100dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <com.github.florent37.singledateandtimepicker.SingleDateAndTimePicker
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.65"
+                        app:picker_selectorHeight="@dimen/wheel_spacing"
+                        app:picker_curved="false"
+                        app:picker_cyclic="true"
+                        app:picker_displayDays="true"
+                        app:picker_visibleItemCount="7"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+        </com.loopeer.shadow.ShadowView>
+
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/green_background_button"
+        android:text="CONFIRM TIME"
+        android:textColor="@color/white_Color"
+        android:textSize="15dp"
+        android:layout_margin="30dp"
+        android:layout_gravity="bottom"
+        />
+
+
+</FrameLayout>

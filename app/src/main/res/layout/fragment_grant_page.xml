@@ -1,0 +1,72 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.emptytrip.hr.emptytrip.GrantPageFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <com.loopeer.shadow.ShadowView
+        android:id="@+id/shadow_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="10dp"
+        app:cornerRadius="4dp"
+        app:shadowMargin="10dp"
+        app:shadowRadius="14dp">
+
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+
+                android:layout_width="83dp"
+                android:layout_height="74dp"
+                android:src="@drawable/img_grant"
+                android:layout_gravity="center"
+                />
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="To start earning,
+please grant access
+to your saved contacts"
+                android:gravity="center"
+                android:textSize="28dp"
+                android:textColor="@color/title_Color"
+                android:layout_marginTop="40dp"
+                />
+
+            <Button
+                android:id="@+id/btn_grant"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/green_background_button"
+                android:text="Grant Permission"
+                android:textAllCaps="false"
+                android:layout_marginTop="40dp"
+                android:textColor="@color/white_Color"
+                />
+
+            <TextView
+                android:id="@+id/tv_note"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Congratulations, now you can sit back and start earning money. Sweet!"
+                android:gravity="center"
+                android:textSize="15dp"
+                android:layout_marginTop="40dp"
+                />
+
+        </LinearLayout>
+
+    </com.loopeer.shadow.ShadowView>
+
+
+</FrameLayout>

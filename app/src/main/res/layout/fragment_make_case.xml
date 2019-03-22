@@ -1,0 +1,292 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.emptytrip.hr.emptytrip.MakeCaseFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.loopeer.shadow.ShadowView
+            android:id="@+id/shadow_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="10dp"
+            android:paddingBottom="10dp"
+            app:cornerRadius="4dp"
+            app:shadowMarginBottom="10dp"
+            app:shadowRadius="14dp">
+
+            <LinearLayout
+
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:src="@drawable/img_back"
+                        android:scaleType="centerInside"
+                        />
+                    <Button
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:id="@+id/btn_back"
+                        android:background="@android:color/transparent"
+                        />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_tripsArchive"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Trips Archive"
+                    android:textSize="28dp"
+                    android:gravity="center"
+                    android:textColor="@color/title_Color"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    />
+            </LinearLayout>
+
+
+        </com.loopeer.shadow.ShadowView>
+
+        <com.loopeer.shadow.ShadowView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:elevation="10dp"
+            app:cornerRadius="4dp"
+            app:shadowMarginBottom="10dp"
+            app:shadowMarginLeft="10dp"
+            app:shadowMarginRight="10dp"
+            app:shadowRadius="14dp">
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:orientation="vertical"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <LinearLayout
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="30dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:layout_gravity="center_vertical"
+                                android:layout_width="21dp"
+                                android:layout_height="21dp"
+                                android:src="@drawable/img_from"
+                                />
+                            <TextView
+                                android:layout_gravity="center_vertical"
+                                android:id="@+id/tv_mylocation"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="56 Maggio Plains"
+                                android:textSize="17dp"
+                                android:layout_marginLeft="15dp"
+                                />
+                            <TextView
+                                android:id="@+id/tv_distance"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="215km"
+                                android:gravity="right"
+                                android:paddingRight="10dp"
+                                android:textColor="@color/black_Color"
+                                android:textSize="22dp"
+                                />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:layout_width="21dp"
+                                android:layout_height="21dp"
+                                android:src="@drawable/img_path"
+                                />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="21dp"
+                                android:src="@drawable/img_to" />
+                            <TextView
+                                android:id="@+id/tv_destination"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="16 Nikki Meadows"
+                                android:textSize="17dp"
+                                android:layout_marginLeft="15dp"
+                                />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_margin="10dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:id="@+id/tv_price"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:text="$5.00"
+                                android:textSize="28dp"
+                                android:textColor="@color/title_Color"
+                                />
+                            <LinearLayout
+                                android:layout_marginLeft="20dp"
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:id="@+id/tv_estimatehours"
+                                    android:textSize="15dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="1HR 20MINS"
+                                    android:textColor="#000000"
+                                    />
+                                <TextView
+                                    android:id="@+id/tv_departuretime"
+                                    android:textSize="15dp"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="DEPARTURE: 3rd July 12:30AM"
+                                    android:textColor="#000000"
+                                    />
+                                <TextView
+                                    android:id="@+id/tv_arrivaltime"
+                                    android:textSize="15dp"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="EST ARRIVAL: 3rd July 12:30AM"
+                                    android:textColor="#000000"
+                                    />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginTop="30dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <LinearLayout
+                                android:gravity="center"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content">
+
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:layout_width="51dp"
+                                    android:layout_height="51dp"
+                                    android:src="@drawable/img_photo" />
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_marginLeft="20dp"
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <TextView
+                                    android:id="@+id/tv_name"
+                                    android:textSize="22dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Luis Clayton"
+                                    android:textColor="#000000"
+                                    />
+                                <TextView
+                                    android:id="@+id/tv_seates"
+                                    android:textSize="13dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Vehicle Type: 7 Seaters"
+                                    android:textColor="#000000"
+                                    />
+                            </LinearLayout>
+
+                        </LinearLayout>
+                        <TextView
+                            android:id="@+id/tv_note"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="You deserve the best, and at Empty Trip we strive for perfection. So if you’re unhappy with any part of our service, we want to know.
+
+If you encountered a problem with
+your ride, please let us know."
+                            android:gravity="center"
+                            android:textSize="15dp"
+                            android:layout_marginTop="40dp"
+                            android:textColor="@color/black_Color"
+                            />
+
+                        <Button
+                            android:id="@+id/btn_makecase"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:background="@drawable/green_background_button"
+                            android:text="Make a case"
+                            android:textColor="@color/white_Color"
+                            android:textSize="15dp"
+                            android:layout_marginTop="30dp"
+                            android:layout_marginBottom="20dp"
+                            android:textAllCaps="false"
+                            />
+                        <ImageView
+                            android:layout_gravity="center_horizontal"
+                            android:layout_width="24dp"
+                            android:layout_height="13dp"
+                            android:src="@drawable/img_uparrow"
+                            android:layout_marginBottom="20dp"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+        </com.loopeer.shadow.ShadowView>
+
+    </LinearLayout>
+
+
+
+
+
+</FrameLayout>

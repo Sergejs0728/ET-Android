@@ -1,0 +1,324 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.emptytrip.hr.emptytrip.SearchConfirmPageFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/rl_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:id="@+id/tv_location"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="My Location"
+                    android:layout_centerVertical="true"
+                    />
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/img_search"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    />
+                <Button
+                    android:id="@+id/btn_current"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:background="@drawable/gery_tranparent_border"
+
+                    />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:id="@+id/tv_destination"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Destination"
+                    android:layout_centerVertical="true"
+                    />
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/img_search"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    />
+                <Button
+                    android:id="@+id/btn_destination"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:background="@drawable/gery_tranparent_border"
+
+                    />
+
+
+            </RelativeLayout>
+
+            <!--<LinearLayout-->
+                <!--android:weightSum="1"-->
+                <!--android:layout_marginTop="20dp"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="40dp">-->
+
+                <!--<RelativeLayout-->
+                    <!--android:layout_marginRight="10dp"-->
+                    <!--android:background="@drawable/gery_button_border"-->
+                    <!--android:layout_weight="0.5"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent">-->
+
+                    <!--<LinearLayout-->
+                        <!--android:padding="5dp"-->
+                        <!--android:orientation="horizontal"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent">-->
+                        <!--<ImageView-->
+
+                            <!--android:src="@drawable/img_calendar"-->
+                            <!--android:layout_width="40dp"-->
+                            <!--android:layout_height="match_parent" />-->
+
+                        <!--<TextView-->
+                            <!--android:id="@+id/tv_date"-->
+                            <!--android:text="Date"-->
+                            <!--android:textSize="17dp"-->
+                            <!--android:gravity="center_vertical"-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="match_parent" />-->
+                    <!--</LinearLayout>-->
+
+                    <!--<Button-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:background="@android:color/transparent"-->
+                        <!--android:id="@+id/btn_date"-->
+                        <!--/>-->
+
+
+                <!--</RelativeLayout>-->
+
+                <!--<RelativeLayout-->
+                    <!--android:layout_marginLeft="10dp"-->
+                    <!--android:background="@drawable/gery_button_border"-->
+                    <!--android:layout_weight="0.5"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent">-->
+
+                    <!--<LinearLayout-->
+
+                        <!--android:padding="5dp"-->
+                        <!--android:orientation="horizontal"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent">-->
+                        <!--&lt;!&ndash;<ImageView&ndash;&gt;-->
+
+                            <!--&lt;!&ndash;android:src="@drawable/img_clock"&ndash;&gt;-->
+                            <!--&lt;!&ndash;android:layout_width="40dp"&ndash;&gt;-->
+                            <!--&lt;!&ndash;android:layout_height="match_parent" />&ndash;&gt;-->
+
+                        <!--<TextView-->
+                            <!--android:id="@+id/tv_time"-->
+                            <!--android:text="Time"-->
+                            <!--android:textSize="17dp"-->
+                            <!--android:gravity="center_vertical"-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="match_parent" />-->
+                    <!--</LinearLayout>-->
+                    <!--<Button-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:background="@android:color/transparent"-->
+                        <!--android:id="@+id/btn_time"-->
+                        <!--/>-->
+
+                <!--</RelativeLayout>-->
+
+            <!--</LinearLayout>-->
+
+            <LinearLayout
+
+                android:layout_marginBottom="20dp"
+                android:weightSum="1"
+                android:orientation="horizontal"
+                android:layout_marginTop="21dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <Button
+
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="0.5"
+                    android:id="@+id/btn_booknow"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/green_background_button"
+                    android:text="Book Now"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white_Color"
+                    android:textSize="15dp"
+
+                    />
+                <Button
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="0.5"
+                    android:id="@+id/btn_booklater"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/green_background_button"
+                    android:text="Book for Later"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white_Color"
+                    android:textSize="15dp"
+
+                    />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_above="@id/rl_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/map_search"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                class="com.google.android.gms.maps.SupportMapFragment"
+                />
+            <ImageView
+
+                android:id="@+id/img_pos1"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:src="@drawable/img_geopin"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="15dp"
+
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignBottom="@+id/img_pos2"
+                android:layout_toEndOf="@+id/img_pos1"
+                android:layout_toStartOf="@id/img_pos2"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/grey_Color"
+                />
+            <TextView
+
+                android:id="@+id/tv_estimate"
+                android:text="2.5Km | Estimated 2.5 HRS"
+                android:gravity="center"
+                android:textSize="17dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/img_pos2"
+                android:layout_toEndOf="@+id/img_pos1"
+                android:layout_toStartOf="@id/img_pos2"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                />
+
+            <ImageView
+                android:id="@+id/img_pos2"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:src="@drawable/img_geopin"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@android:color/transparent"
+                />
+
+            <LinearLayout
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="31dp"
+                    android:layout_height="44dp"
+                    android:src="@drawable/img_position"
+                    android:layout_marginBottom="44dp"
+                    />
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:src="@drawable/img_info"
+                        />
+                    <Button
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:background="@android:color/transparent"
+                        />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:src="@drawable/img_protect_map"
+                        />
+                    <Button
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:background="@android:color/transparent"
+                        />
+                </RelativeLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</FrameLayout>

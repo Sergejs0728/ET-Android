@@ -1,0 +1,166 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.emptytrip.hr.emptytrip.SelectEmailPageFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <com.loopeer.shadow.ShadowView
+        android:id="@+id/shadow_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="10dp"
+        android:paddingBottom="10dp"
+        app:cornerRadius="4dp"
+        app:shadowMargin="10dp"
+        app:shadowRadius="14dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/img_back"
+                    android:scaleType="centerInside"
+                    />
+                <Button
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:id="@+id/btn_back"
+                    android:background="@android:color/transparent"
+                    />
+            </RelativeLayout>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:id="@+id/tv_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Choose Email Account"
+                        android:layout_gravity="center"
+
+                        />
+                    <Button
+                        android:id="@+id/btn_gmail"
+                        android:layout_marginTop="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="@drawable/green_button_border"
+                        android:text="GMAIL"
+                        android:textColor="@color/grey_Color"
+                        />
+                    <Button
+                        android:id="@+id/btn_hotmail"
+                        android:layout_marginTop="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="@drawable/green_button_border"
+                        android:text="HOTMAIL"
+                        android:textColor="@color/grey_Color"
+                        />
+                    <Button
+                        android:id="@+id/btn_yahoo"
+                        android:layout_marginTop="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="@drawable/green_button_border"
+                        android:text="YAHOO"
+                        android:textColor="@color/grey_Color"
+                        />
+                    <Button
+                        android:id="@+id/btn_outlook"
+                        android:layout_marginTop="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="@drawable/green_button_border"
+                        android:text="OUTLOOK"
+                        android:textColor="@color/grey_Color"
+                        />
+                    <Button
+                        android:id="@+id/btn_mailchimp"
+                        android:layout_marginTop="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="@drawable/green_button_border"
+                        android:text="MAILCHIMP"
+                        android:textColor="@color/grey_Color"
+                        />
+                    <TextView
+                        android:visibility="gone"
+                        android:id="@+id/tv_note"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Or Enter Email Manually"
+                        android:gravity="center"
+                        android:layout_marginTop="40dp"
+                        android:textSize="15dp"
+                        />
+                    <EditText
+                        android:visibility="gone"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/et_mail"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="@drawable/green_button_border"
+                        android:textSize="15dp"
+                        android:hint="Enter Email"
+                        android:padding="5dp"
+                        />
+
+                    <EditText
+                        android:visibility="gone"
+                        android:id="@+id/et_password"
+                        android:layout_marginTop="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="@drawable/green_button_border"
+                        android:textSize="15dp"
+                        android:hint="Enter Password"
+                        android:padding="5dp"
+                        />
+
+                    <Button
+                        android:id="@+id/btn_submit"
+                        android:layout_marginTop="50dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="@drawable/green_background_button"
+                        android:text="Submit"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:layout_marginBottom="50dp"
+                        />
+
+                </LinearLayout>
+            </ScrollView>
+
+
+        </LinearLayout>
+
+    </com.loopeer.shadow.ShadowView>
+
+
+
+</FrameLayout>

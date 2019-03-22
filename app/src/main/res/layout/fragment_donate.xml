@@ -1,0 +1,181 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/layout_Color"
+    tools:context="com.emptytrip.hr.emptytrip.DonateFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <com.loopeer.shadow.ShadowView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="10dp"
+        app:cornerRadius="4dp"
+        app:shadowMargin="10dp"
+        app:shadowRadius="14dp">
+
+        <LinearLayout
+
+
+            android:orientation="vertical"
+            android:layout_centerVertical="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:id="@+id/layer1"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/img_back"
+                    android:scaleType="centerInside"
+                    />
+                <Button
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:id="@+id/btn_back"
+                    android:background="@android:color/transparent"
+                    />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:gravity="bottom"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:gravity="bottom"
+                    android:layout_above="@+id/linear_bottom"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+
+                    <LinearLayout
+
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tv_main"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Make someone’s
+day with a donation!"
+                            android:textSize="28dp"
+                            android:layout_marginTop="10dp"
+                            android:textColor="@color/title_Color"
+                            />
+
+                        <LinearLayout
+                            android:layout_marginTop="50dp"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="23dp"
+                                android:src="@drawable/img_paypal"
+                                />
+
+                            <TextView
+                                android:id="@+id/tv_enterpaypal"
+                                android:layout_marginLeft="10dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Enter their Paypal address"
+                                />
+                        </LinearLayout>
+
+                        <EditText
+                            android:id="@+id/et_email"
+                            android:padding="3dp"
+                            android:hint="Enter Paypal Email"
+                            android:layout_marginTop="20dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:textSize="15dp"
+                            android:background="@drawable/gery_button_border"
+                            />
+                        <TextView
+                            android:id="@+id/tv_or"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="OR"
+                            android:gravity="center"
+                            android:textSize="18dp"
+                            android:textColor="@color/black_Color"
+                            android:layout_marginTop="13dp"
+                            />
+                        <TextView
+                            android:id="@+id/tv_note"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Donate to your Empty Trip wallet"
+                            android:gravity="center"
+                            android:textSize="15dp"
+                            android:textColor="@color/grey_Color"
+                            android:layout_marginTop="13dp"
+                            />
+                        <EditText
+                            android:id="@+id/et_mobilenumber"
+                            android:padding="3dp"
+                            android:hint="Enter ET Mobile Number"
+                            android:layout_marginTop="20dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:textSize="15dp"
+                            android:background="@drawable/gery_button_border"
+                            />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+
+                    android:id="@+id/layer_bottom"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:id="@+id/btn_next"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:text="Let's do it!"
+                        android:textColor="@color/white_Color"
+                        android:background="@drawable/green_background_button"
+                        android:textAllCaps="false"
+                        />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+    </com.loopeer.shadow.ShadowView>
+
+
+</FrameLayout>

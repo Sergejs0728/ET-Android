@@ -1,0 +1,130 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/layout_Color"
+    tools:context="com.emptytrip.hr.emptytrip.WithdrawAmountFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <com.loopeer.shadow.ShadowView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="10dp"
+        app:cornerRadius="4dp"
+        app:shadowMargin="10dp"
+        app:shadowRadius="14dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/img_back"
+                    android:scaleType="centerInside"
+                    />
+                <Button
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:id="@+id/btn_back"
+                    android:background="@android:color/transparent"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="200dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <TextView
+                        android:id="@+id/tv_main"
+                        android:layout_marginTop="33dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="How much would you like to withdraw"
+                        android:textSize="28dp"
+                        android:textColor="@color/title_Color"
+                        />
+
+
+                    <LinearLayout
+                        android:layout_marginTop="100dp"
+                        android:weightSum="1"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <EditText
+                            android:id="@+id/et_amount"
+                            android:layout_weight="0.2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/gery_button_border"
+                            android:hint="Enter Amount"
+                            android:textSize="15dp"
+                            android:padding="5dp"
+                            />
+                        <TextView
+
+                            android:id="@+id/tv_usd"
+                            android:layout_weight="0.8"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:text="USD"
+                            android:textSize="25dp"
+                            android:textColor="@color/title_Color"
+                            android:gravity="center_vertical|right"
+                            />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <Button
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:id="@+id/btn_next"
+                        android:layout_alignParentBottom="true"
+
+                        android:layout_marginBottom="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="@drawable/green_background_button"
+                        android:text="Let's do it!"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white_Color" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+
+    </com.loopeer.shadow.ShadowView>
+
+
+
+</FrameLayout>

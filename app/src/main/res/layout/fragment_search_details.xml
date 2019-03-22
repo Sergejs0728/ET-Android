@@ -1,0 +1,735 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.emptytrip.hr.emptytrip.SearchDetailsFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.loopeer.shadow.ShadowView
+            android:id="@+id/shadow_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="10dp"
+            app:cornerRadius="4dp"
+            app:shadowMarginBottom="10dp"
+            app:shadowRadius="14dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:src="@drawable/img_back"
+                        android:scaleType="centerInside"
+                        />
+                    <Button
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:id="@+id/btn_back"
+                        android:background="@android:color/transparent"
+                        />
+                </RelativeLayout>
+
+                <LinearLayout
+
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <RelativeLayout
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+
+                            android:id="@+id/tv_mylocation"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="My Location"
+                            android:textSize="15dp"
+                            android:gravity="left"
+                            android:textColor="@color/title_Color"
+                            />
+                        <LinearLayout
+                            android:layout_alignParentRight="true"
+                            android:id="@+id/linear"
+                            android:orientation="horizontal"
+                            android:layout_width="wrap_content"
+                            android:gravity="right"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:layout_marginRight="5dp"
+                                android:layout_width="21dp"
+                                android:layout_height="21dp"
+                                android:src="@drawable/img_geopin"/>
+
+                            <TextView
+                                android:id="@+id/tv_destination"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:text="Destination"
+                                android:textColor="@color/title_Color"
+                                android:textSize="15dp" />
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:layout_toEndOf="@+id/tv_mylocation"
+                            android:layout_toStartOf="@id/linear"
+                            android:layout_toLeftOf="@id/linear"
+                            android:layout_toRightOf="@+id/tv_mylocation"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <View
+                                android:id="@+id/view"
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="@color/grey_Color"
+
+                                android:layout_below="@id/text"
+
+                                />
+
+                            <TextView
+                                android:id="@+id/text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="25 KM"
+                                android:layout_centerHorizontal="true"
+                                android:textSize="15dp"
+                                />
+                        </RelativeLayout>
+
+
+                    </RelativeLayout>
+
+
+                    <TextView
+
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/tv_estimatehours"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="1HR 20MINS"
+                        android:textSize="15dp"
+                        android:textColor="@color/black_Color"
+                        />
+                    <TextView
+                        android:id="@+id/tv_departuretime"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="DEPARTURE: 3rd July 2018 12:30 am"
+                        android:textSize="15dp"
+                        android:textColor="@color/grey_Color"
+                        android:layout_marginTop="5dp"
+                        />
+                    <TextView
+
+                        android:id="@+id/tv_arrivaltime"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="EST ARRIVAL: 3rd July 1:30PM"
+                        android:textSize="15dp"
+                        android:textColor="@color/grey_Color"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="10dp"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </com.loopeer.shadow.ShadowView>
+
+
+
+        <com.loopeer.shadow.ShadowView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:elevation="10dp"
+            app:cornerRadius="4dp"
+            app:shadowMarginBottom="10dp"
+            app:shadowMarginLeft="10dp"
+            app:shadowMarginRight="10dp"
+            app:shadowRadius="14dp">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginTop="0dp"
+                    android:padding="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_marginTop="20dp"
+                        android:id="@+id/tv_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Please complete the
+following details:"
+                        android:textSize="22dp"
+                        android:textColor="@color/title_Color"
+                        android:gravity="center"
+                        />
+
+                    <LinearLayout
+                        android:layout_marginTop="20dp"
+                        android:gravity="center_vertical"
+                        android:weightSum="1"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tv_peopleno"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:text="Number of people"
+                            android:textSize="13dp" />
+                        <LinearLayout
+
+                            android:gravity="center_vertical"
+                            android:weightSum="1"
+                            android:layout_weight="0.5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:gravity="right"
+                                android:orientation="horizontal"
+                                android:layout_weight="0.5"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <RelativeLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+                                    <ImageView
+                                        android:layout_width="22dp"
+                                        android:layout_height="22dp"
+                                        android:src="@drawable/img_minus"
+                                        />
+                                    <Button
+                                        android:layout_width="22dp"
+                                        android:layout_height="22dp"
+                                        android:background="@color/transparent"
+                                        />
+                                </RelativeLayout>
+                                <RelativeLayout
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+                                    <ImageView
+                                        android:layout_width="22dp"
+                                        android:layout_height="22dp"
+                                        android:src="@drawable/img_plus"
+                                        />
+                                    <Button
+                                        android:layout_width="22dp"
+                                        android:layout_height="22dp"
+                                        android:background="@color/transparent"
+                                        />
+                                </RelativeLayout>
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_weight="0.5"
+                                android:gravity="right"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <com.loopeer.shadow.ShadowView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:elevation="10dp"
+                                    app:cornerRadius="2dp"
+                                    app:shadowMargin="5dp"
+                                    app:shadowRadius="14dp">
+                                    <TextView
+                                        android:layout_width="40dp"
+                                        android:layout_height="40dp"
+                                        android:text="10"
+                                        android:gravity="center"
+                                        />
+
+                                </com.loopeer.shadow.ShadowView>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                    <LinearLayout
+
+                        android:layout_marginTop="10dp"
+                        android:gravity="center_vertical"
+                        android:weightSum="1"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tv_petno"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:text="Travelling with an uncaged pet?"
+                            android:textSize="13dp" />
+                        <LinearLayout
+                            android:gravity="center_vertical"
+                            android:layout_weight="0.5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:gravity="right"
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <Button
+
+                                    android:layout_marginRight="20dp"
+                                    android:layout_width="40dp"
+                                    android:layout_height="26dp"
+                                    android:background="@drawable/green_background_button"
+                                    android:text="Yes"
+                                    android:textColor="@color/white_Color"
+                                    android:textSize="10dp"
+                                    />
+                                <Button
+
+                                    android:layout_width="40dp"
+                                    android:layout_height="26dp"
+                                    android:background="@drawable/green_background_button"
+                                    android:text="No"
+                                    android:textColor="@color/white_Color"
+                                    android:textSize="10dp"
+                                    />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+
+                        android:layout_marginTop="20dp"
+                        android:gravity="center_vertical"
+                        android:weightSum="1"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tv_luggage"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:text="Do you have luggage with you?"
+                            android:textSize="13dp" />
+                        <LinearLayout
+                            android:gravity="center_vertical"
+                            android:layout_weight="0.5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:gravity="right"
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <Button
+
+                                    android:layout_marginRight="20dp"
+                                    android:layout_width="40dp"
+                                    android:layout_height="26dp"
+                                    android:background="@drawable/green_background_button"
+                                    android:text="Yes"
+                                    android:textColor="@color/white_Color"
+                                    android:textSize="10dp"
+                                    />
+                                <Button
+
+                                    android:layout_width="40dp"
+                                    android:layout_height="26dp"
+                                    android:background="@drawable/green_background_button"
+                                    android:text="No"
+                                    android:textColor="@color/white_Color"
+                                    android:textSize="10dp"
+                                    />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:weightSum="3"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:layout_marginTop="50dp"
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <RelativeLayout
+                                android:layout_gravity="center_horizontal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+                                <ImageView
+                                    android:layout_centerVertical="true"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_width="26dp"
+                                    android:layout_height="26dp"
+                                    android:src="@drawable/img_car"
+                                    />
+                                <Button
+                                    android:layout_width="47dp"
+                                    android:layout_height="47dp"
+                                    android:background="@color/transparent"
+                                    />
+                            </RelativeLayout>
+                            <TextView
+                                android:id="@+id/tv_small1"
+                                android:layout_marginTop="5dp"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Small
+up to 10kg"
+                                android:gravity="center"
+                                />
+
+                            <com.loopeer.shadow.ShadowView
+                                android:layout_gravity="center_horizontal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:elevation="10dp"
+                                app:cornerRadius="2dp"
+                                app:shadowMargin="5dp"
+                                app:shadowRadius="14dp">
+
+                                <TextView
+                                    android:id="@+id/lb_small1"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:text="1"
+                                    android:gravity="center"
+                                    android:textColor="@color/black_Color"
+                                    />
+
+                            </com.loopeer.shadow.ShadowView>
+
+
+                            <LinearLayout
+                                android:layout_marginTop="10dp"
+                                android:gravity="center"
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <RelativeLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+                                    <ImageView
+                                        android:layout_width="22dp"
+                                        android:layout_height="22dp"
+                                        android:src="@drawable/img_minus"
+                                        />
+                                    <Button
+                                        android:layout_width="22dp"
+                                        android:layout_height="22dp"
+                                        android:background="@color/transparent"
+                                        />
+                                </RelativeLayout>
+                                <RelativeLayout
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+                                    <ImageView
+                                        android:layout_width="22dp"
+                                        android:layout_height="22dp"
+                                        android:src="@drawable/img_plus"
+                                        />
+                                    <Button
+                                        android:layout_width="22dp"
+                                        android:layout_height="22dp"
+                                        android:background="@color/transparent"
+                                        />
+                                </RelativeLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:layout_marginTop="50dp"
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <RelativeLayout
+                                android:layout_gravity="center_horizontal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+                                <ImageView
+                                    android:layout_centerVertical="true"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_width="34dp"
+                                    android:layout_height="34dp"
+                                    android:src="@drawable/img_car"
+                                    />
+                                <Button
+                                    android:layout_width="47dp"
+                                    android:layout_height="47dp"
+                                    android:background="@color/transparent"
+                                    />
+                            </RelativeLayout>
+                            <TextView
+                                android:id="@+id/tv_small2"
+                                android:layout_marginTop="5dp"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Small
+up to 10kg"
+                                android:gravity="center"
+                                />
+
+                            <com.loopeer.shadow.ShadowView
+                                android:layout_gravity="center_horizontal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:elevation="10dp"
+                                app:cornerRadius="2dp"
+                                app:shadowMargin="5dp"
+                                app:shadowRadius="14dp">
+
+                                <TextView
+                                    android:id="@+id/lb_small2"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:text="1"
+                                    android:gravity="center"
+                                    android:textColor="@color/black_Color"
+                                    />
+
+                            </com.loopeer.shadow.ShadowView>
+                            <LinearLayout
+                                android:layout_marginTop="10dp"
+                                android:gravity="center"
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <RelativeLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+                                    <ImageView
+                                        android:layout_width="22dp"
+                                        android:layout_height="22dp"
+                                        android:src="@drawable/img_minus"
+                                        />
+                                    <Button
+                                        android:layout_width="22dp"
+                                        android:layout_height="22dp"
+                                        android:background="@color/transparent"
+                                        />
+                                </RelativeLayout>
+                                <RelativeLayout
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+                                    <ImageView
+                                        android:layout_width="22dp"
+                                        android:layout_height="22dp"
+                                        android:src="@drawable/img_plus"
+                                        />
+                                    <Button
+                                        android:layout_width="22dp"
+                                        android:layout_height="22dp"
+                                        android:background="@color/transparent"
+                                        />
+                                </RelativeLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_marginRight="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1"
+                            android:layout_marginTop="50dp"
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <RelativeLayout
+                                android:layout_gravity="center_horizontal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+                                <ImageView
+                                    android:layout_centerVertical="true"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_width="47dp"
+                                    android:layout_height="47dp"
+                                    android:src="@drawable/img_car"
+                                    />
+                                <Button
+                                    android:layout_width="47dp"
+                                    android:layout_height="47dp"
+                                    android:background="@color/transparent"
+                                    />
+                            </RelativeLayout>
+
+                            <TextView
+                                android:id="@+id/tv_small3"
+                                android:layout_marginTop="5dp"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Small
+up to 10kg"
+                                android:gravity="center"
+                                />
+
+                            <com.loopeer.shadow.ShadowView
+                                android:layout_gravity="center_horizontal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:elevation="10dp"
+                                app:cornerRadius="2dp"
+                                app:shadowMargin="5dp"
+                                app:shadowRadius="14dp">
+
+                                <TextView
+                                    android:id="@+id/lb_small3"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:text="1"
+                                    android:gravity="center"
+                                    android:textColor="@color/black_Color"
+                                    />
+
+                            </com.loopeer.shadow.ShadowView>
+
+                            <LinearLayout
+                                android:layout_marginTop="10dp"
+                                android:gravity="center"
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <RelativeLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+                                    <ImageView
+                                        android:layout_width="22dp"
+                                        android:layout_height="22dp"
+                                        android:src="@drawable/img_minus"
+                                        />
+                                    <Button
+                                        android:layout_width="22dp"
+                                        android:layout_height="22dp"
+                                        android:background="@color/transparent"
+                                        />
+                                </RelativeLayout>
+                                <RelativeLayout
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+                                    <ImageView
+                                        android:layout_width="22dp"
+                                        android:layout_height="22dp"
+                                        android:src="@drawable/img_plus"
+                                        />
+                                    <Button
+                                        android:layout_width="22dp"
+                                        android:layout_height="22dp"
+                                        android:background="@color/transparent"
+                                        />
+                                </RelativeLayout>
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginTop="50dp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tv_total"
+                            android:textColor="@color/title_Color"
+                            android:text="Total price:"
+                            android:textSize="22dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/tv_price"
+                            android:gravity="right"
+                            android:textColor="@color/title_Color"
+                            android:text="$5.00"
+                            android:textSize="34dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                    <Button
+
+                        android:id="@+id/btn_confirm"
+                        android:layout_marginBottom="40dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="@drawable/green_background_button"
+                        android:text="Confirm"
+                        android:textColor="@color/white_Color"
+                        android:textSize="15dp"
+                        />
+
+                </LinearLayout>
+            </ScrollView>
+
+        </com.loopeer.shadow.ShadowView>
+
+    </LinearLayout>
+
+</FrameLayout>

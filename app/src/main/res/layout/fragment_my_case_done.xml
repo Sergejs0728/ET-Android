@@ -1,0 +1,90 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.emptytrip.hr.emptytrip.MyCaseDoneFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <com.loopeer.shadow.ShadowView
+        android:id="@+id/shadow_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="10dp"
+        app:cornerRadius="4dp"
+        app:shadowMargin="10dp"
+        app:shadowRadius="14dp">
+        <RelativeLayout
+
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+
+
+                android:gravity="bottom"
+                android:layout_above="@id/btn_ok"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:layout_marginBottom="40dp"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_marginTop="40dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+                    android:src="@drawable/img_success"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_main"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Your case has been resolved."
+
+                    android:textSize="25dp"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/title_Color"
+                    android:layout_marginTop="35dp"
+                    android:layout_marginBottom="20dp"
+                    />
+                <TextView
+                    android:id="@+id/tv_note"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/grey_Color"
+                    android:text="Thanks for taking the time to get in touch. We hope you are pleased with the outcome of our investigation. We look forward to welcoming you on board again soon."
+                    android:gravity="center"
+                    android:textSize="13dp"
+
+                    android:layout_marginTop="40dp"
+                    />
+
+            </LinearLayout>
+
+
+            <Button
+
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_alignParentBottom="true"
+                android:id="@+id/btn_ok"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:text="OK"
+                android:textColor="@color/white_Color"
+                android:background="@drawable/green_background_button"
+                android:layout_marginBottom="20dp"
+
+                />
+        </RelativeLayout>
+    </com.loopeer.shadow.ShadowView>
+
+
+</FrameLayout>

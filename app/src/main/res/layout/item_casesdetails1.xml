@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:weightSum="1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_photo"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/img_photo"
+            android:textColor="@color/grey_Color"
+            />
+        <TextView
+            android:id="@+id/tv_text1"
+            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Finding the perfect learning tool for Flash is a daunting task to any novice web developer. One can find help in a number of ways through books, friends and private tutors. These methods are great but not often readily available, nor cheap!"
+            android:textSize="15dp"
+            android:textColor="@color/grey_Color"
+            android:layout_marginBottom="10dp"
+            />
+    </LinearLayout>
+
+</LinearLayout>

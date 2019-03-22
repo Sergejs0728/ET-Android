@@ -1,0 +1,101 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.emptytrip.hr.emptytrip.SplashMainFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_marginTop="60dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:src="@drawable/img_logogreen"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_logo1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Empty"
+                android:textColor="#4add5d"
+                android:textSize="45dp"
+                />
+            <TextView
+                android:id="@+id/tv_logo2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Trip"
+                android:textSize="45dp"
+                android:textColor="@color/title_Color"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#6f6f6f"
+            android:text="New to Empty Trip? Not for long….
+Sign up here and start enjoying
+great value taxi journeys. "
+            android:textSize="17dp"
+            android:gravity="center"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="83dp"
+            />
+        <Button
+            android:id="@+id/btn_signUp"
+            android:layout_marginTop="58dp"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/green_button_border"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:text="Sign - Up"
+            android:textAllCaps="false"
+            android:textColor="#6f6f6f"
+            android:textSize="15dp"
+
+            />
+
+        <TextView
+            android:id="@+id/tv_already"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Already have an account?"
+            android:gravity="center"
+            android:layout_marginTop="31dp"
+            android:textColor="#6f6f6f"
+            android:textSize="15dp"
+            />
+        <Button
+            android:id="@+id/btn_signIn"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/green_button_border"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:text="Sign - In"
+            android:textSize="15dp"
+            android:textAllCaps="false"
+            android:textColor="#6f6f6f"
+
+            />
+    </LinearLayout>
+
+</FrameLayout>

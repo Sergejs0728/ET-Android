@@ -1,0 +1,157 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.emptytrip.hr.emptytrip.SearchDriverDoneFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <com.loopeer.shadow.ShadowView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="10dp"
+        app:cornerRadius="4dp"
+        app:shadowMargin="10dp"
+        app:shadowRadius="14dp">
+
+        <LinearLayout
+
+            android:gravity="center_horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:weightSum="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_marginBottom="30dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+                <ImageView
+                    android:layout_marginTop="40dp"
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+                    android:src="@drawable/img_success"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_main"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nice work, your trip has been booked!"
+                    android:textSize="25dp"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/title_Color"
+                    android:layout_marginTop="35dp"
+                    />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/btn_ok"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:text="OK"
+                    android:textColor="@color/white_Color"
+                    android:background="@drawable/green_background_button"
+                    />
+
+                <RelativeLayout
+
+                    android:layout_marginTop="30dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/tv_mylocation"
+                        android:layout_width="wrap_content"
+
+                        android:layout_height="wrap_content"
+                        android:text="My Location"
+                        android:textSize="15dp"
+                        android:gravity="left"
+                        android:textColor="@color/title_Color"
+                        />
+                    <LinearLayout
+                        android:layout_alignParentRight="true"
+                        android:id="@+id/linear"
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:gravity="right"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_marginRight="5dp"
+                            android:layout_width="21dp"
+                            android:layout_height="21dp"
+                            android:src="@drawable/img_geopin"/>
+
+                        <TextView
+                            android:id="@+id/tv_destination"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Destination"
+                            android:textSize="15dp"
+                            android:gravity="center"
+                            android:textColor="@color/title_Color"
+                            />
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_toEndOf="@+id/tv_mylocation"
+                        android:layout_toStartOf="@id/linear"
+                        android:layout_toLeftOf="@id/linear"
+                        android:layout_toRightOf="@+id/tv_mylocation"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <View
+                            android:id="@+id/view"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/grey_Color"
+
+                            android:layout_below="@id/tv_distance"
+
+                            />
+
+                        <TextView
+                            android:id="@+id/tv_distance"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="25 KM"
+                            android:layout_centerHorizontal="true"
+                            android:textSize="15dp"
+                            />
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_departure"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="DEPARTURE: 3rd July 2018 12:30am"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"
+
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </com.loopeer.shadow.ShadowView>
+
+
+</FrameLayout>

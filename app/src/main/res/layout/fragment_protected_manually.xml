@@ -1,0 +1,149 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.emptytrip.hr.emptytrip.ProtectedManuallyFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.loopeer.shadow.ShadowView
+                android:id="@+id/shadow_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="10dp"
+                android:paddingBottom="10dp"
+                app:cornerRadius="4dp"
+                app:shadowMarginBottom="10dp"
+                app:shadowRadius="14dp">
+
+                <LinearLayout
+
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <RelativeLayout
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:src="@drawable/img_back"
+                            android:scaleType="centerInside"
+                            />
+                        <Button
+
+                            android:layout_width="36dp"
+                            android:layout_height="36dp"
+                            android:id="@+id/btn_back"
+                            android:background="@android:color/transparent"
+                            />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/tv_tripsArchive"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Protect your contacts"
+                        android:textSize="28dp"
+                        android:gravity="center"
+                        android:textColor="@color/title_Color"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        />
+                </LinearLayout>
+
+
+            </com.loopeer.shadow.ShadowView>
+            <LinearLayout
+                android:layout_margin="20dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="83dp"
+                    android:layout_height="83dp"
+                    android:src="@drawable/img_protect_green"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Optional"
+                    android:textSize="16dp"
+                    android:layout_marginTop="15dp"
+                    />
+                <EditText
+                    android:id="@+id/et_fullnameField"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:paddingLeft="5dp"
+                    android:background="@drawable/gery_button_border"
+                    android:hint="Enter Full Name"
+                    />
+
+                <TextView
+                    android:layout_marginTop="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Enter Atleast 1 of the following:"
+                    android:textSize="16dp"
+                    />
+
+                <EditText
+                    android:id="@+id/et_emailField"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/gery_button_border"
+                    android:hint="Enter Email"
+                    android:paddingLeft="5dp"
+                    />
+                <EditText
+                    android:id="@+id/et_phone_numberField"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/gery_button_border"
+                    android:hint="Enter Mobile Number"
+                    android:paddingLeft="5dp"
+                    />
+
+                <Button
+                    android:id="@+id/btn_protect"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/green_background_button"
+                    android:text="Protect"
+                    android:textAllCaps="false"
+                    android:textSize="20dp"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="30dp"
+                    />
+
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</FrameLayout>

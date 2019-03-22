@@ -1,0 +1,174 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.emptytrip.hr.emptytrip.ProtectMenuFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.loopeer.shadow.ShadowView
+            android:id="@+id/shadow_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="10dp"
+            android:paddingBottom="10dp"
+            app:cornerRadius="4dp"
+            app:shadowMarginBottom="10dp"
+            app:shadowRadius="14dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:src="@drawable/img_back"
+                        android:scaleType="centerInside"
+                        />
+
+                    <Button
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:id="@+id/btn_back"
+                        android:background="@android:color/transparent"
+                        />
+                </RelativeLayout>
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Protect your contacts"
+                    android:textSize="28dp"
+                    android:gravity="center"
+                    android:textColor="@color/title_Color"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    />
+            </LinearLayout>
+
+        </com.loopeer.shadow.ShadowView>
+        <com.loopeer.shadow.ShadowView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:elevation="10dp"
+            app:cornerRadius="4dp"
+            app:shadowMarginBottom="10dp"
+            app:shadowMarginLeft="10dp"
+            app:shadowMarginRight="10dp"
+            app:shadowRadius="14dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:layout_margin="30dp"
+                        android:layout_marginTop="20dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:layout_width="87dp"
+                            android:layout_height="87dp"
+                            android:src="@drawable/img_protect_green"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="30dp"
+                            />
+
+                        <TextView
+                            android:id="@+id/tv_note"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Let's get started. Pick your contacts by phone number and we’ll protect them so you can earn money from their forthcoming trips."
+                            android:textColor="@color/grey_Color"
+                            android:textSize="15dp"
+
+                            />
+                        <Button
+                            android:id="@+id/btn_phonecontact"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:background="@drawable/green_button_border"
+                            android:text="Protected Phone Contacts"
+                            android:layout_marginTop="40dp"
+                            android:textColor="@color/grey_Color"
+                            android:textAllCaps="false"
+                            android:textSize="15dp"
+                            />
+                        <Button
+                            android:id="@+id/btn_emailcontact"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:background="@drawable/green_button_border"
+                            android:text="Protected Email Contacts"
+                            android:layout_marginTop="20dp"
+                            android:textColor="@color/grey_Color"
+                            android:textAllCaps="false"
+                            android:textSize="15dp"
+                            />
+                        <Button
+                            android:id="@+id/btn_facebook"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:background="@drawable/green_button_border"
+                            android:text="Protected Facebook Contacts"
+                            android:layout_marginTop="20dp"
+                            android:textColor="@color/grey_Color"
+                            android:textAllCaps="false"
+                            android:textSize="15dp"
+                            android:visibility="gone"
+                            />
+                        <Button
+                            android:id="@+id/btn_manually"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:background="@drawable/green_button_border"
+                            android:text="Protected Contacts Manually"
+                            android:layout_marginTop="20dp"
+                            android:textColor="@color/grey_Color"
+                            android:textAllCaps="false"
+                            android:textSize="15dp"
+                            />
+                        <Button
+                            android:id="@+id/btn_howitworks"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:background="@android:color/transparent"
+                            android:text="How doest it work?"
+                            android:textAllCaps="false"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginBottom="40dp"
+                            />
+
+                    </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+
+        </com.loopeer.shadow.ShadowView>
+
+    </LinearLayout>
+
+</FrameLayout>

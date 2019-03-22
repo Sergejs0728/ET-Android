@@ -1,0 +1,86 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/layout_Color"
+    tools:context="com.emptytrip.hr.emptytrip.WithdrawDoneFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <com.loopeer.shadow.ShadowView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="10dp"
+        app:cornerRadius="4dp"
+        app:shadowMargin="10dp"
+        app:shadowRadius="14dp">
+
+        <RelativeLayout
+            android:paddingRight="20dp"
+            android:paddingLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginBottom="100dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+
+                    android:layout_marginTop="40dp"
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+                    android:src="@drawable/img_success"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_main"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$95.00 has been withdrawn!"
+                    android:textSize="25dp"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/title_Color"
+                    android:layout_marginTop="35dp"
+                    />
+                <TextView
+                    android:id="@+id/tv_note"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/grey_Color"
+                    android:text="Congratulations, you’re £XXXX richer! "
+                    android:gravity="center"
+                    android:textSize="17dp"
+                    android:layout_marginBottom="30dp"
+                    />
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/btn_confirm"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/green_background_button"
+                    android:text="Confirm"
+                    android:layout_marginBottom="20dp"
+                    android:textColor="@color/white_Color"
+                    android:textSize="15dp" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </com.loopeer.shadow.ShadowView>
+
+
+
+</FrameLayout>

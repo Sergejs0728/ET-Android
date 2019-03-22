@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "385590615938",
+    "firebase_url": "https://emptytrip-197802.firebaseio.com",
+    "project_id": "emptytrip-197802",
+    "storage_bucket": "emptytrip-197802.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:385590615938:android:8fa773cb707edeee",
+        "android_client_info": {
+          "package_name": "com.emptytrip.hr.emptytrip"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "385590615938-8gt0tb7dlmqpjhrug49ibm4afp47sbrh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCnT9WRDCA5Ot18EsSONq--Niteu98MtFI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

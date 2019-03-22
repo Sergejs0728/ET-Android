@@ -1,0 +1,75 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.emptytrip.hr.emptytrip.TripsArchiveDoneFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <com.loopeer.shadow.ShadowView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="10dp"
+        app:cornerRadius="4dp"
+        app:shadowMargin="10dp"
+        app:shadowRadius="14dp">
+
+        <LinearLayout
+            android:gravity="center_horizontal"
+            android:padding="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <ImageView
+                android:layout_marginTop="50dp"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:src="@drawable/img_success"
+                />
+
+            <TextView
+                android:id="@+id/tv_main"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thanks buddy!
+We’re investigating the matter and will get back to you shortly."
+                android:textSize="25dp"
+                android:gravity="center_horizontal"
+                android:textColor="@color/title_Color"
+                android:layout_marginTop="35dp"
+                />
+            <TextView
+                android:layout_marginTop="20dp"
+                android:id="@+id/tv_note"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/grey_Color"
+                android:text="At Empty Trip you’re more than a customer, you’re our friends, our family - heck you’re even our cheerleaders! So we want only the best for you, and appreciate any feedback to improve our service."
+                android:gravity="center"
+                android:textSize="17dp"
+                />
+
+            <LinearLayout
+                android:gravity="bottom"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <Button
+                    android:id="@+id/btn_ok"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:text="OK"
+                    android:textColor="@color/white_Color"
+                    android:background="@drawable/green_background_button"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </com.loopeer.shadow.ShadowView>
+
+
+
+
+</FrameLayout>

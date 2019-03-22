@@ -1,0 +1,81 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.emptytrip.hr.emptytrip.AffiliateContentFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_marginTop="30dp"
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="22dp"
+                android:textColor="@color/title_Color"
+                android:text="My personal affiliate code:"
+                android:gravity="center"
+                />
+            <TextView
+                android:id="@+id/tv_code"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="34dp"
+                android:text="JFSKE-3429"
+                android:textColor="@color/title_Color"
+                android:gravity="center"
+                />
+
+            <Button
+                android:id="@+id/btn_copy"
+                android:text="Copy"
+                android:textColor="@color/white_Color"
+                android:background="@drawable/green_background_button"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:textAllCaps="false"
+                android:layout_margin="20dp"
+                />
+
+            <Button
+                android:id="@+id/btn_save"
+                android:text="Share"
+                android:textColor="@color/white_Color"
+                android:background="@drawable/green_background_button"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:textAllCaps="false"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                />
+
+            <TextView
+                android:id="@+id/tv_note"
+                android:layout_margin="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/title_Color"
+                android:textSize="18dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="Use this code to earn money from every trip your protected contact takes. It’s that simple!"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</FrameLayout>

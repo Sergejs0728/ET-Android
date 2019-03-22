@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/action_search"
+        android:icon="@drawable/img_tab_search"
+        android:title="SEARCH" />
+
+    <item
+        android:id="@+id/action_mytrips"
+        android:icon="@drawable/img_tab_mytrips"
+        android:title="MY TRIPS" />
+
+    <item
+        android:id="@+id/action_earnings"
+        android:icon="@drawable/img_tab_earnings"
+        android:title="EARNINGS" />
+
+    <item
+        android:id="@+id/action_settings"
+        android:icon="@drawable/img_tab_settings"
+        android:title="SETTINGS" />
+
+</menu>

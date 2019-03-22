@@ -1,0 +1,204 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.emptytrip.hr.emptytrip.SettingsPageFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ScrollView
+
+        android:paddingTop="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_marginLeft="45dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="41dp"
+                    android:layout_height="41dp"
+                    android:src="@drawable/btn_profile"
+                    />
+                <Button
+                    android:id="@+id/btn_profile"
+                    android:background="@android:color/transparent"
+                    android:textSize="22dp"
+                    android:textColor="@color/black_Color"
+                    android:layout_marginLeft="30dp"
+                    android:gravity="center_vertical"
+                    android:text="Profile"
+                    android:textAllCaps="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="25dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="41dp"
+                    android:layout_height="41dp"
+                    android:src="@drawable/btn_notification"
+                    />
+                <Button
+                    android:id="@+id/btn_notification"
+                    android:background="@android:color/transparent"
+                    android:textSize="22dp"
+                    android:textColor="@color/black_Color"
+                    android:layout_marginLeft="30dp"
+                    android:text="Notifications"
+                    android:textAllCaps="false"
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="25dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="41dp"
+                    android:layout_height="41dp"
+                    android:src="@drawable/btn_billings"
+                    />
+                <Button
+                    android:id="@+id/btn_billings"
+                    android:background="@android:color/transparent"
+                    android:textSize="22dp"
+                    android:textColor="@color/black_Color"
+                    android:layout_marginLeft="30dp"
+                    android:text="Billings"
+                    android:textAllCaps="false"
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="25dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="41dp"
+                    android:layout_height="41dp"
+                    android:src="@drawable/btn_payment"
+                    />
+                <Button
+                    android:id="@+id/btn_payments"
+                    android:background="@android:color/transparent"
+                    android:textSize="22dp"
+                    android:textColor="@color/black_Color"
+                    android:layout_marginLeft="30dp"
+                    android:text="Payments"
+                    android:textAllCaps="false"
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_marginTop="25dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="41dp"
+                        android:layout_height="41dp"
+                        android:src="@drawable/btn_help"
+                        />
+                    <LinearLayout
+
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <Button
+                            android:id="@+id/btn_resolution"
+                            android:background="@android:color/transparent"
+                            android:textSize="22dp"
+                            android:textColor="@color/black_Color"
+                            android:layout_marginLeft="30dp"
+                            android:text="Resolution Center"
+                            android:textAllCaps="false"
+                            android:gravity="center_vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="41dp" />
+                        <Button
+                            android:id="@+id/btn_tripsArchive"
+                            android:background="@android:color/transparent"
+                            android:textSize="22dp"
+                            android:textColor="@color/black_Color"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginTop="10dp"
+                            android:text="Trips Archive"
+                            android:textAllCaps="false"
+                            android:gravity="center_vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="41dp" />
+                        <Button
+                            android:id="@+id/btn_myCases"
+                            android:background="@android:color/transparent"
+                            android:textSize="22dp"
+                            android:textColor="@color/black_Color"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginTop="10dp"
+                            android:text="My Cases"
+                            android:textAllCaps="false"
+                            android:gravity="center_vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="41dp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginBottom="40dp"
+                android:layout_marginTop="25dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="41dp"
+                    android:layout_height="41dp"
+                    android:src="@drawable/btn_logout"
+                    />
+                <Button
+                    android:id="@+id/btn_logout"
+                    android:background="@android:color/transparent"
+                    android:textSize="22dp"
+                    android:textColor="@color/black_Color"
+                    android:layout_marginLeft="30dp"
+
+                    android:text="Logout"
+                    android:textAllCaps="false"
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</FrameLayout>

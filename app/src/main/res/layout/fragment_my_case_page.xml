@@ -1,0 +1,82 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.emptytrip.hr.emptytrip.MyCasePageFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+     <LinearLayout
+         android:orientation="vertical"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent">
+         <com.loopeer.shadow.ShadowView
+             android:id="@+id/shadow_view"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:elevation="10dp"
+             app:cornerRadius="4dp"
+             app:shadowMarginBottom="10dp"
+             app:shadowRadius="14dp">
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="vertical">
+
+                 <RelativeLayout
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_marginLeft="10dp"
+                     android:layout_marginTop="20dp">
+
+                     <ImageView
+                         android:layout_width="18dp"
+                         android:layout_height="18dp"
+                         android:layout_centerHorizontal="true"
+                         android:layout_centerVertical="true"
+                         android:scaleType="centerInside"
+                         android:src="@drawable/img_back" />
+
+                     <Button
+                         android:id="@+id/btn_back"
+                         android:layout_width="36dp"
+                         android:layout_height="36dp"
+                         android:background="@android:color/transparent" />
+                 </RelativeLayout>
+
+                 <TextView
+                     android:id="@+id/tv_cases"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_marginBottom="20dp"
+                     android:layout_marginTop="15dp"
+                     android:gravity="center"
+                     android:text="My Cases"
+                     android:textColor="@color/title_Color"
+                     android:textSize="28dp" />
+             </LinearLayout>
+
+
+         </com.loopeer.shadow.ShadowView>
+         <com.loopeer.shadow.ShadowView
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:elevation="10dp"
+             app:cornerRadius="4dp"
+             app:shadowMarginBottom="10dp"
+             app:shadowMarginLeft="10dp"
+             app:shadowMarginRight="10dp"
+             app:shadowRadius="14dp">
+
+             <ListView
+
+                 android:id="@+id/lv_cases"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"></ListView>
+
+         </com.loopeer.shadow.ShadowView>
+
+     </LinearLayout>
+
+</FrameLayout>

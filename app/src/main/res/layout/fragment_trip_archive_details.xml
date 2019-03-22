@@ -1,0 +1,220 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.emptytrip.hr.emptytrip.TripArchiveDetailsFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.loopeer.shadow.ShadowView
+            android:id="@+id/shadow_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="10dp"
+            android:paddingBottom="10dp"
+            app:cornerRadius="4dp"
+            app:shadowMarginBottom="10dp"
+            app:shadowRadius="14dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:src="@drawable/img_back"
+                        android:scaleType="centerInside"
+                        />
+                    <Button
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:id="@+id/btn_back"
+                        android:background="@android:color/transparent"
+                        />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_mytrips"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="My Trip Details"
+                    android:textSize="28dp"
+                    android:gravity="center"
+                    android:textColor="@color/title_Color"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    />
+
+            </LinearLayout>
+
+        </com.loopeer.shadow.ShadowView>
+
+        <com.loopeer.shadow.ShadowView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:elevation="10dp"
+            app:cornerRadius="4dp"
+            app:shadowMarginBottom="10dp"
+            app:shadowMarginLeft="10dp"
+            app:shadowMarginRight="10dp"
+            app:shadowRadius="14dp">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <LinearLayout
+
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:padding="10dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/tv_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="30dp"
+                            android:text="Luis Clayton"
+                            android:textColor="@color/black_Color"
+                            android:textSize="18dp" />
+                        <TextView
+                            android:id="@+id/tv_seats"
+                            android:layout_marginTop="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Vehicle Type 7 seater"
+                            android:textColor="@color/grey_Color"
+                            android:textSize="17dp"
+                            />
+
+                        <TextView
+                            android:id="@+id/tv_estimatehours"
+                            android:layout_marginTop="30dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1HR 20MINS"
+                            android:textColor="@color/black_Color"
+                            android:textSize="17dp"
+                            />
+                        <TextView
+                            android:id="@+id/tv_departuretime"
+                            android:layout_marginTop="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="DEPARTURE: 3rd July  12:30AM"
+                            android:textColor="@color/grey_Color"
+                            android:textSize="17dp"
+                            />
+                        <TextView
+                            android:id="@+id/tv_arrivaltime"
+                            android:layout_marginTop="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="EST ARRIVAL:  3rd July 1:30PM"
+                            android:textColor="@color/grey_Color"
+                            android:textSize="17dp"
+                            />
+
+                        <TextView
+                            android:id="@+id/tv_price"
+                            android:layout_marginTop="30dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="$5.00 paid"
+                            android:textColor="@color/grey_Color"
+                            android:textSize="18dp"
+                            />
+
+                        <TextView
+
+                            android:id="@+id/tv_note"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Please share details of your issue and
+we’ll investigate the matter immediately."
+                            android:textSize="17dp"
+                            android:gravity="center_horizontal"
+                            android:layout_marginTop="30dp"
+                            />
+
+                        <EditText
+                            android:id="@+id/et_details"
+                            android:layout_width="match_parent"
+                            android:layout_height="187dp"
+                            android:hint="Enter details here"
+                            android:gravity="top"
+                            android:background="@drawable/gery_button_border"
+                            android:padding="10dp"
+                            android:layout_marginTop="15dp"
+                            />
+
+                        <LinearLayout
+                            android:layout_marginTop="15dp"
+                            android:gravity="right"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <ImageButton
+                                android:layout_width="32dp"
+                                android:layout_height="32dp"
+                                android:src="@drawable/img_attachment"
+                                android:background="@android:color/transparent"
+                                android:scaleType="centerInside"
+                                />
+
+                            <ImageButton
+                                android:layout_marginLeft="20dp"
+                                android:layout_width="32dp"
+                                android:layout_height="32dp"
+                                android:src="@drawable/img_send"
+                                android:background="@android:color/transparent"
+                                android:scaleType="centerInside"
+                                />
+
+                        </LinearLayout>
+                        <Button
+                            android:id="@+id/btn_sendfeedback"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:text="Send feedback"
+                            android:background="@drawable/green_background_button"
+                            android:textColor="@color/white_Color"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginBottom="30dp"
+                            android:textAllCaps="false"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </ScrollView>
+
+        </com.loopeer.shadow.ShadowView>
+
+
+
+    </LinearLayout>
+
+
+</FrameLayout>
